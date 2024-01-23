@@ -1,8 +1,4 @@
-# 拼接任意列表
-# 实现类似于R语言中的paste函数功能
-
-
-# %% paste() function for Python
+# paste() function for Python
 # join lists pairwise, using recycling rules
 # default behavior is equivalent to R's paste() function
 def paste(*args: list, sep="", recycle=True):
@@ -54,24 +50,3 @@ def paste(*args: list, sep="", recycle=True):
                 pasted = [f"{a}{sep}{b}" for a, b in zip(pasted, arg)]
                 pasted = pasted + longer_part
     return pasted
-
-
-# %% test
-a = [1, 2, 3, 4, 5]
-b = ["a", "b", "c"]
-c = ["x"]
-d = []
-
-print(paste(a, b, sep="-", recycle=False))
-print(paste(a, b, sep="-"))
-print(paste(a, b, c, sep="-", recycle=False))
-print(paste(a, b, c, sep="-", recycle=True))
-print(paste(a, c, sep="-"))
-print(paste(a, sep="-"))
-print(paste(sep="-"))
-# with empty list
-print(paste(a, b, d, sep="-", recycle=False))
-print(paste(a, b, d, sep="-", recycle=True))
-
-
-# %%
