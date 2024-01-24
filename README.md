@@ -1,7 +1,7 @@
 Join lists together pairwise. It's equivalent to R's paste() function, using recycling rules for unequal length of lists.  
 It accept two additional arguments:  
-    - sep: a string to concatenate list elements, default to empty string "".  
-    - recycle: wether to recycle the shorter list's elements, default to True, equivalent to R's paste() function.  
+- sep: a string to concatenate list elements, default to empty string "".  
+- recycle: wether to recycle the shorter list's elements, default to True, equivalent to R's paste() function.  
 
 # Some examples:  
 `a = [1, 2, 3, 4, 5]`  
