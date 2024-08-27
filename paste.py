@@ -1,9 +1,9 @@
 # R's paste() function for Python
-# join lists pairwise, using recycling rules
+# concatenate lists of strings pairwise, using recycling rules
 # default behavior is equivalent to R's paste() function
 def paste(*args: list, sep="", recycle=True):
     """
-    join lists together pairwise, allowing for unequal length
+    concatenate lists of strings together pairwise, allowing for unequal length
     It accept two additional arguments:
         recycle: wether to recycle the shorter list's elements
             default to True
