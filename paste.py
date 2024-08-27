@@ -1,4 +1,4 @@
-# paste() function for Python
+# R's paste() function for Python
 # join lists pairwise, using recycling rules
 # default behavior is equivalent to R's paste() function
 def paste(*args: list, sep="", recycle=True):
