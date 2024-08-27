@@ -3,12 +3,14 @@
 # default behavior is equivalent to R's paste() function
 def paste(*args: list, sep="", recycle=True):
     """
-    join lists together pairwise
-    allowing for unequal length, using recycling rules
-    if recycle is True:
-        it's equivalent to R's paste() function
-        recyle shorter lists elements
-    if recycle is False: paste together without recycling
+    join lists together pairwise, allowing for unequal length
+    It accept two additional arguments:
+        recycle: wether to recycle the shorter list's elements
+            default to True
+                equivalent to R's paste() function
+                using recycling rules, recyle shorter lists elements
+            if False, paste together without recycling
+        sep: a string to concatenate list elements, default to empty string "".
     return a string
     """
     # delete empty list first
